@@ -13,13 +13,32 @@ package ca.sheridancollege.project;
  */
 public abstract class Card 
 {
+
+    boolean getCard() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     //default modifier for child classes
-    
+        public enum Suit {SPADE,DIAMOND,CLUB,HEARTS}; //enum is added for loose coupling 
+        public enum Value{ACE,ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,JACK,KING,QUEEN};
+        private final Suit suit; 
+        private final Value value; 
     /**
      * Students should implement this method for their specific children classes 
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
-    
+     public Card(Suit s, Value gVal) 
+        {
+           suit =s;
+           value= gVal;
+        }
+	public Value getValue() {
+		return this.value; 
+	}
+
+	
+	public Suit getSuit() {
+		return this.suit;
+        }
     @Override
     public abstract String toString();
     

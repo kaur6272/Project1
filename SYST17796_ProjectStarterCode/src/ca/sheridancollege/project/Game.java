@@ -1,7 +1,11 @@
 /**
  * SYST 17796 Project Winter 2019 Base code.
  * Students can modify and extend to implement their game.
- * Add your name as a modifier and the date!
+ * Arshdeep Kaur 
+ Amandeep Singh 
+ Ritika Saini
+ Muskan Trikha 
+ 11th june 2019
  */
 package ca.sheridancollege.project;
 
